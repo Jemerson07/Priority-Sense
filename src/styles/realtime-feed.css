@@ -1,0 +1,58 @@
+.realtime-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.realtime-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.realtime-header h3 {
+  margin: 6px 0 0;
+}
+
+.realtime-count {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(92, 225, 198, 0.12);
+  border: 1px solid rgba(92, 225, 198, 0.18);
+  color: #cbfff5;
+}
+
+.realtime-list {
+  display: grid;
+  gap: 12px;
+}
+
+.realtime-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.realtime-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.realtime-item p,
+.realtime-item small {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.68);
+}
+
+@media (max-width: 680px) {
+  .realtime-header,
+  .realtime-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
