@@ -1,0 +1,47 @@
+.insight-group {
+  display: grid;
+  gap: 16px;
+}
+
+.insight-group h3 {
+  margin: 0;
+}
+
+.insight-list {
+  display: grid;
+  gap: 12px;
+}
+
+.insight-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.insight-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.insight-item p,
+.insight-item span {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.72);
+}
+
+.insight-item span {
+  font-weight: 700;
+  color: #f4f7fb;
+}
+
+@media (max-width: 760px) {
+  .insight-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
