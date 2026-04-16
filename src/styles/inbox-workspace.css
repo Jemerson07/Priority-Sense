@@ -1,0 +1,17 @@
+.inbox-workspace-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 20px;
+}
+
+.inbox-list-column,
+.inbox-detail-column {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .inbox-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
