@@ -1,0 +1,64 @@
+.control-summary-card {
+  display: grid;
+  gap: 10px;
+}
+
+.control-summary-card span {
+  color: rgba(226, 235, 255, 0.64);
+}
+
+.control-summary-card strong {
+  font-size: 2rem;
+}
+
+.control-board {
+  display: grid;
+  gap: 18px;
+}
+
+.control-board h3 {
+  margin: 6px 0 0;
+}
+
+.control-list {
+  display: grid;
+  gap: 14px;
+}
+
+.control-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.control-item h4 {
+  margin: 8px 0;
+}
+
+.control-item p,
+.control-meta small {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.72);
+  line-height: 1.6;
+}
+
+.control-meta {
+  display: grid;
+  gap: 6px;
+  min-width: 180px;
+}
+
+@media (max-width: 840px) {
+  .control-item {
+    flex-direction: column;
+  }
+
+  .control-meta {
+    min-width: 0;
+  }
+}
