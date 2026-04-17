@@ -1,0 +1,81 @@
+.rule-card,
+.score-bands-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.rule-card-header,
+.rule-weight-row,
+.score-band-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rule-card h3,
+.score-bands-panel h3 {
+  margin: 8px 0 0;
+}
+
+.rule-card p,
+.score-band-item p {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.72);
+  line-height: 1.6;
+}
+
+.rule-status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.rule-active {
+  background: rgba(92, 225, 198, 0.12);
+  border: 1px solid rgba(92, 225, 198, 0.18);
+  color: #cbfff5;
+}
+
+.rule-inactive {
+  background: rgba(255, 181, 71, 0.12);
+  border: 1px solid rgba(255, 181, 71, 0.18);
+  color: #ffe7c2;
+}
+
+.rule-weight-row {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.score-band-list {
+  display: grid;
+  gap: 12px;
+}
+
+.score-band-item {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.score-band-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.score-band-item span,
+.rule-weight-row strong {
+  color: #f4f7fb;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .rule-card-header,
+  .rule-weight-row,
+  .score-band-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
