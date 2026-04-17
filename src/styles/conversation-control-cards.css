@@ -1,0 +1,38 @@
+.control-focus-card {
+  display: grid;
+  gap: 18px;
+}
+
+.control-focus-card h3 {
+  margin: 6px 0 0;
+}
+
+.control-focus-message {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.76);
+  line-height: 1.7;
+}
+
+.control-focus-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.control-focus-footer strong {
+  color: #f4f7fb;
+}
+
+.control-focus-footer small {
+  color: rgba(231, 238, 250, 0.68);
+}
+
+@media (max-width: 760px) {
+  .control-focus-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
