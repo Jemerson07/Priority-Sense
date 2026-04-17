@@ -1,0 +1,84 @@
+.connector-card,
+.env-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.connector-card-header,
+.env-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.connector-card h3,
+.env-panel h3 {
+  margin: 8px 0 0;
+}
+
+.connector-card p,
+.env-item p {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.72);
+  line-height: 1.6;
+}
+
+.connector-status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.connector-connected {
+  background: rgba(92, 225, 198, 0.12);
+  border: 1px solid rgba(92, 225, 198, 0.18);
+  color: #cbfff5;
+}
+
+.connector-pending {
+  background: rgba(255, 181, 71, 0.12);
+  border: 1px solid rgba(255, 181, 71, 0.18);
+  color: #ffe7c2;
+}
+
+.connector-disconnected {
+  background: rgba(255, 95, 95, 0.12);
+  border: 1px solid rgba(255, 95, 95, 0.18);
+  color: #ffd6d6;
+}
+
+.env-list {
+  display: grid;
+  gap: 12px;
+}
+
+.env-item {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.env-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.env-item code {
+  display: inline-flex;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(123, 140, 255, 0.12);
+  border: 1px solid rgba(123, 140, 255, 0.18);
+  color: #dce5ff;
+}
+
+@media (max-width: 760px) {
+  .connector-card-header,
+  .env-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
