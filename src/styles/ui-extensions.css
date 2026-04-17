@@ -1,0 +1,51 @@
+.operational-status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.status-neutral {
+  background: rgba(173, 204, 255, 0.12);
+  border-color: rgba(173, 204, 255, 0.18);
+  color: #dbe6ff;
+}
+
+.status-success {
+  background: rgba(92, 225, 198, 0.12);
+  border-color: rgba(92, 225, 198, 0.18);
+  color: #cbfff5;
+}
+
+.status-warning {
+  background: rgba(255, 181, 71, 0.12);
+  border-color: rgba(255, 181, 71, 0.18);
+  color: #ffe7c2;
+}
+
+.status-critical {
+  background: rgba(255, 95, 95, 0.12);
+  border-color: rgba(255, 95, 95, 0.18);
+  color: #ffd6d6;
+}
+
+.integration-fallback-card,
+.queue-empty-state {
+  display: grid;
+  gap: 12px;
+}
+
+.integration-fallback-card strong,
+.queue-empty-state h3 {
+  margin: 0;
+}
+
+.integration-fallback-card p,
+.queue-empty-state p {
+  margin: 0;
+  color: rgba(231, 238, 250, 0.72);
+  line-height: 1.6;
+}
